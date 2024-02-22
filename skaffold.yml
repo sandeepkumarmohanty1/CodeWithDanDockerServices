@@ -4,19 +4,19 @@ metadata:
   name: codewithdan-docker-services
 build:
   artifacts:
-  - image: codewithdan/nginx
+  - image: sandeepkumarmohanty/nginx
     context: .
     docker:
       dockerfile: .docker/nginx.production.dockerfile
-  - image: codewithdan/node-codewithdan
+  - image: sandeepkumarmohanty/my-website
     context: .
     docker:
       dockerfile: .docker/node-codewithdan.production.dockerfile
-  - image: codewithdan/mongo
+  - image: sandeepkumarmohanty/mongo
     context: .
     docker:
       dockerfile: .docker/mongo.dockerfile
-  - image: codewithdan/redis
+  - image: sandeepkumarmohanty/redis
     context: .
     docker:
       dockerfile: .docker/redis.production.dockerfile

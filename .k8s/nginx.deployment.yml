@@ -15,7 +15,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: codewithdan/nginx
+      - image: sandeepkumarmohanty/nginx
         imagePullPolicy: IfNotPresent
         name: nginx
         ports:
